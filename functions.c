@@ -63,7 +63,7 @@ void GenBoard(context_t *ctxt)
     ctxt->board = malloc(ctxt->rows * ctxt->columns * sizeof(*(ctxt->board)));
     if(ctxt->board == NULL)
     {
-        fprintf(stderr, "Unable to malloc board in InitContext !\n");
+        fprintf(stderr, "Unable to malloc board in GenBoard !\n");
         exit(EXIT_FAILURE);
     }
     for(x = 0; x < ctxt->rows; ++x)
